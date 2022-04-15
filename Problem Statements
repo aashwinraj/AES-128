@@ -1,0 +1,8 @@
+1. Implement the compression function h : {0, 1} 256 → {0, 1} 128 by using the following rule h(m1||m2) = AES-128(m1, m2).Here AES-128 encryption algorithm takes an 128-bit key and an 128-bit message block and generates
+128-bit ciphertext block (AES-128(M,K)=C) i.e., AES-128: {0, 1} 128 × {0, 1} 128 → {0, 1} 128.
+
+2. Your code will take input m1, m2 ∈ {0, 1} 128 and print h(m1||m2).
+
+3. Implement a second pre-image (m01||m02) ∈ {0, 1} 256 finding process for h corresponding to any random input (m1||m2) ∈ {0, 1} 256
+.
+4. Print the obtained second pre-image (m01||m02) and the compressed values h(m01||m02), h(m1||m2).
